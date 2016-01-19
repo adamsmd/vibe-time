@@ -1,0 +1,18 @@
+{
+  "uuid": "221d2fe5-6198-4424-b8e7-2998509bc7fd",
+  "shortName": "vibe-time",
+  "longName": "Vibe Time",
+  "companyName": "MakeAwesomeHappen",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt", "chalk"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
