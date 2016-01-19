@@ -43,11 +43,11 @@ void vibe_time() {
   int start = 2;
   segments[0]=0; // Put a buffer at the front.  Otherwise, first vibe is always long.
   segments[1]=100;
+  start = vibe_number(((t->tm_hour + 11) % 12) + 1, start);
+  segments[start-1]=1500;
   start = vibe_number(t->tm_min / 10, start);
   segments[start-1]=1500;
   start = vibe_number(t->tm_min % 10, start);
-  segments[start-1]=1500;
-  start = vibe_number(t->tm_hour % 12, start);
   VibePattern pattern;
   pattern.durations = segments;
   pattern.num_segments = start;
